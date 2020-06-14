@@ -1,22 +1,23 @@
 
 // Buttons
 
-.button {
+.btn {
   padding        : 1rem 2rem;
   display        : inline-block;
   margin         : 2rem 0;
-  border         : 1px solid;
   text-transform : uppercase;
   font-family    : $heading-font-family;
   letter-spacing : 2px;
+  background-image: linear-gradient(45deg, orange, red 100%);
+  border-radius: 30px;
 }
 
-.bg-primary .button {
+.bg-primary .btn {
   color        : $secondary-shade;
   border-color : $secondary-shade;
 }
 
-.bg-secondary .button {
+.bg-secondary .btn {
   color        : $primary-shade;
   border-color : $primary-shade;
 }

@@ -1,0 +1,19 @@
+.background-svg-1 {
+  background-image: url('/assets/graphics/rounded-container-gradient-1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 500px;
+}
+.details-content {
+  padding: 2rem 4rem;
+  border: 5px solid;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.info-box {
+  min-height: 500px;
+  width: 80%;
+  margin: 5rem auto;
+}

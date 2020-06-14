@@ -6,7 +6,7 @@
   top       : 0;
   left      : 0;
   z-index   : 1000;
-  padding   : 0.5rem 2rem;
+  padding   : 1% 7%;
 }
 
 // Desktop Navigation Styles
@@ -15,8 +15,8 @@
   height: auto
 }
 
-nav a {
-  font-size      : 1rem;
+.nav-bar a {
+  font-size      : 1.8rem;
   font-family    : $body-font-family;
   text-transform : uppercase;
   padding        : 0.25rem;

@@ -14,6 +14,13 @@
      -moz-box-pack        : center;
       -ms-flex-pack       : center;
           justify-content : center;
+    -webkit-box-orient    : horizontal;
+    -webkit-box-direction : normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient    : horizontal;
+       -moz-box-direction : normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 @mixin flex-right {
   display                 : -webkit-box;
@@ -31,6 +38,13 @@
      -moz-box-pack        : right;
       -ms-flex-pack       : right;
           justify-content : right;
+    -webkit-box-orient    : horizontal;
+    -webkit-box-direction : normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient    : horizontal;
+       -moz-box-direction : normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 @mixin flex-left {
   display                 : -webkit-box;
@@ -48,6 +62,13 @@
      -moz-box-pack        : left;
       -ms-flex-pack       : left;
           justify-content : left;
+    -webkit-box-orient    : horizontal;
+    -webkit-box-direction : normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient    : horizontal;
+       -moz-box-direction : normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 @mixin flex-bottom {
   display                 : -webkit-box;
@@ -65,8 +86,15 @@
      -moz-box-pack        : center;
       -ms-flex-pack       : center;
           justify-content : center;
+    -webkit-box-orient    : horizontal;
+    -webkit-box-direction : normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient    : horizontal;
+       -moz-box-direction : normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
-@mixin flex-bottom {
+@mixin flex-top {
   display                 : -webkit-box;
   display                 : -webkit-flex;
   display                 : -moz-box;
@@ -82,6 +110,13 @@
      -moz-box-pack        : center;
       -ms-flex-pack       : center;
           justify-content : center;
+    -webkit-box-orient    : horizontal;
+    -webkit-box-direction : normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient    : horizontal;
+       -moz-box-direction : normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 // Transitions

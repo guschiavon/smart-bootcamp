@@ -1,13 +1,12 @@
 # Basic settings
 basics:
-  site_title: Jekyll Bigfoot
-  description: A loaded Jekyll boilerplate optimized for CloudCannon CMS
+  site_title: SMART Startup Bootcamp
   site_base_url: 'https://mysite.com'
-  site_logo_image: '/bigfoot.png'
-  site_thumb_image: 'assets/images/placeholder-001.jpg'
+  site_logo_image: ''
+  site_thumb_image: ''
   contact_email: 'example@me.com'
   phone_number: "+555 555 5555"
-  address: 1 Main Street, Springfield 90009
+  address: Chiang Mai, Thailand
 social:
   facebook_url: 'https://facebook.com'
   instagram_url: 'https://instagram.com'
@@ -28,8 +27,8 @@ navigation:
   menu_6_url:
 # Brand identity
 logos:
-  navbar_logo_image: '/assets/logos/your-logo.png'
-  footer_logo_image: '/assets/logos/your-logo-alternative.png'
+  navbar_logo_image: ''
+  footer_logo_image: ''
 
 # Global colors. Put HEX values between quotes otherwise it will act as a comment in YAML
 colors:
@@ -41,14 +40,14 @@ colors:
 
 # Typography (can be customized to accomodate more styles like standard font sizes and line height)
 fonts:
-  fonts_code_block:  '<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nunito&display=swap" rel="stylesheet">' # Place between single quotes
-  body_font_family: "'Nunito', sans-serif;"
-  design_font_family: "'Abril Fatface', cursive;"
+  fonts_code_block:  '<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">' # Place between single quotes
+  body_font_family: "'Lato', sans-serif;"
+  design_font_family: "'Lato', sans-serif;"
 
 seo:
   fb_app_id: 123456789
-  keywords: [keyword, seo, optimization]
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  keywords: [chiang mai, startup, thailand visa, thailand freelancer visa, thailand work visa, work visa thailand]
+  description: Live and work in Chiang Mai while you develop your new startup
 
 # Analytics & embeds
 configuration:
@@ -56,4 +55,3 @@ configuration:
   google_analytics_code_block:
   form_submission_handler_code_block:
   flexbox_framework_code_block: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">'
-  fontawesome_code_block:
