@@ -9,33 +9,11 @@ sass:
   sass_dir: _sass
   style: compressed
 
-# Global permalinks
-permalink: /:categories/:year/:title
-
 # Collections configurations
 collections:
   pages:
     output: true
     permalink: /:title
-
-# Defaults
-defaults:
-  -
-    scope:
-      path: "/posts" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      layout: blog
-      title:
-      subtitle:
-      author:
-      description: SEO content. Limit to 160 characters.
-      preview_image:
-      preview_image_alt_text:
-      categories: []
-      tags: []
-      keywords: []
-      sections:
 
 # Plugins installed
 plugins:
