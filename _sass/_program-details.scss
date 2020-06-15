@@ -1,19 +1,48 @@
-.background-svg-1 {
-  background-image: url('/assets/graphics/rounded-container-gradient-1.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 500px;
-}
-.details-content {
-  padding: 2rem 4rem;
-  border: 5px solid;
+.details-content,
+.mentors {
+  width: 100%;
   border-radius: 10px;
-  text-align: center;
+  margin: auto;
   margin-bottom: 2rem;
 }
+
+
+.program-requirements {
+  border-radius: 30px;
+}
+
+.details-content {
+  padding: 2rem 4rem;
+  border: 3px solid $accent-color;
+  p,
+  h2,
+  h3,
+  li,
+  ul,
+  ol,
+  span {
+    color: $secondary-color;
+  }
+  &:nth-of-type(even) {
+    border-color: #ffae0a;
+  }
+}
+
 .info-box {
-  min-height: 500px;
   width: 80%;
-  margin: 5rem auto;
+}
+
+.mentors {
+  .mentor-avatar {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    margin-bottom: 1rem;
+    .responsive-img-container img {
+      border-radius: 20px;
+    }
+  }
+  .mentor-card {
+    padding: 1.5rem;
+  }
 }

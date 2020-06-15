@@ -1,7 +1,10 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
 body {
-  background-color: whitesmoke;
-  height: 100%;
-  width: 100%;
+  background-color: $primary-color;
 }
 
 header {
@@ -21,18 +24,16 @@ h3 {
 }
 
 h1 {
-  color           : $accent-color;
   font-size       : 4rem;
   text-transform  : uppercase;
 }
 
 h2 {
-  color         : $secondary-color;
-  font-size     : 2.5rem;
+  text-transform: uppercase;
+  font-size     : 3rem;
 }
 
 h3 {
-  color         : $secondary-shade;
   font-size     : 2rem;
 }
 
@@ -61,7 +62,23 @@ h2,
 h3,
 h4,
 p,
+a,
+blockquote,
+cite,
+ul,
+ol,
+li,
 span {
+  color: $secondary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul {
   margin-bottom: 2rem;
 }
 
@@ -69,15 +86,20 @@ input,
 button {
   border: none;
   padding: 1rem;
+  width: 350px;
+}
+
+button {
+  color: $primary-color;
+  font-size: 1.2rem;
+  margin: 1rem auto;
 }
 
 input {
   border-radius: 30px;
-  width:350px;
   margin: auto;
   margin-bottom: 1rem;
   display: block;
 }
-
 
 // Paddings

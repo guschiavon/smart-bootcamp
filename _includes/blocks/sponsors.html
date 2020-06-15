@@ -1,0 +1,15 @@
+<section class="sponsors padding-lg">
+  <h2 class="editable">Created in Partnership</h2>
+  <p class="editable">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+  <div class="grid-noGutter-spaceBetween">
+    {% for partner in page.partners %}
+    <div class="col-2_md-4_sm-6">
+      <div class="partner-logo flex-center">
+        <img src="{{partner.logo_image}}" alt="">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

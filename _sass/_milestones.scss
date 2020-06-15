@@ -5,11 +5,15 @@
 
 .milestone-item {
   text-align: center;
+  position: relative;
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .milestone-container::before,
 .milestone-outer {
-  background-color: #999;
+  background-color: darken($primary-color, 5);
 }
 
 .milestone-container::before {
@@ -20,6 +24,30 @@
   height    : 12px;
   width     : 80%;
   z-index   : -1;
+}
+
+.application {
+  .milestone-container::before {
+    background-color: unset;
+  }
+  .milestone-inner {
+    span {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    &:hover {
+      transition: background 0.2s linear;
+      background-image: linear-gradient(45deg, orange 15%, red);
+      .milestone-inner {
+        transform: scale(1.02);
+      }
+    }
+  }
+  .milestone-item {
+    h3 {
+      margin: 1rem auto;
+    }
+  }
 }
 
 .milestone-inner,
@@ -37,17 +65,25 @@
 }
 
 .milestone-inner {
-  background-image: linear-gradient(45deg, red 15%, orange);
+  background-color: #c1c1c1;
   height: 75px;
   width: 75px;
   position: relative;
+  transition: background 0.2s linear;
   span {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-family: $body-font-family;
     text-transform: uppercase;
-    color: #f2f2f2;
+    color: #555;
     font-size: 0.9rem;
+  }
+}
+.milestone-inner.complete {
+  // background-image: unset;
+  background-image: linear-gradient(45deg, red 15%, orange);
+  span {
+    color: #f2f2f2;
   }
 }

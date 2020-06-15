@@ -32,11 +32,11 @@ logos:
 
 # Global colors. Put HEX values between quotes otherwise it will act as a comment in YAML
 colors:
-  primary_color: "#222"
+  primary_color: "#f2f2f2"
   secondary_color: "#555"
-  primary_shade_color: "#363e36"
+  primary_shade_color: "#ffffff2e"
   secondary_shade_color: "#565"
-  accent_color: "#999"
+  accent_color: "#1b4470"
 
 # Typography (can be customized to accomodate more styles like standard font sizes and line height)
 fonts:

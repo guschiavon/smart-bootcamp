@@ -1,9 +1,8 @@
 ---
 layout: default
 title: SMART Startup Bootcamp
+description: For SEO, keep at 160 words max
 preview_image: assets/images/placeholder-007.jpg
-main_image: assets/images/placeholder-003.jpg
-main_image_alt_text: Some alt text here
 highlights:
   - highlight_title: 6-Month SMART Visa
     icon_id: Passport
@@ -17,39 +16,82 @@ highlights:
     icon_id: Social-1
   - highlight_title: Fundraising
     icon_id: Growth
+complete_milestone_1: true
+complete_milestone_2: false
+complete_milestone_3: false
+complete_milestone_4: false
+complete_milestone_5: false
 mentors:
   - name: Lily Bruns
-    avatar: assets/images/placeholder-001.jpg
+    avatar_image: assets/images/placeholder-001.jpg
     position: Country Manager
     company: Draper Startup House
+  - name: Lily Bruns
+    avatar_image: assets/images/placeholder-001.jpg
+    position: Country Manager
+    company: Draper Startup House
+  - name: Lily Bruns
+    avatar_image: assets/images/placeholder-001.jpg
+    position: Country Manager
+    company: Draper Startup House
+  - name: Lily Bruns
+    avatar_image: assets/images/placeholder-001.jpg
+    position: Country Manager
+    company: Draper Startup House
+  - name: Lily Bruns
+    avatar_image: assets/images/placeholder-001.jpg
+    position: Country Manager
+    company: Draper Startup House
+  - name: Lily Bruns
+    avatar_image: assets/images/placeholder-001.jpg
+    position: Country Manager
+    company: Draper Startup House
+  - name: Lily Bruns
+    avatar_image: assets/images/placeholder-001.jpg
+    position: Country Manager
+    company: Draper Startup House
+  - name: Lily Bruns
+    avatar_image: assets/images/placeholder-001.jpg
+    position: Country Manager
+    company: Draper Startup House
+partners:
+  - logo_image: assets/graphics/dsh.png
+  - logo_image: assets/graphics/depa.png
+  - logo_image: assets/graphics/cmea-logo.png
+  - logo_image: assets/graphics/nia-logo.png
+  - logo_image: assets/graphics/stepcmu.png
+  - logo_image: assets/graphics/thailand-boi-logo.png
 ---
 
 <main>
   <section class="center above-the-fold-container">
-    <img src="/assets/graphics/header-bg.svg" class="background-img" alt="">
     <div class="logo">
       <img src="/assets/graphics/dsh.png" alt="">
     </div>
     <div class="above-the-fold-content">
-      <h2 class="editable">
+      <h1 class="editable">
         Live and Work in Chiang Mai while you build your new startup
-      </h2>
+      </h1>
       <h3 class="editable">
         September 2020 - Febuary 2021
       </h3>
       <p class="editable">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-
     </div>
-    <div class="grid-noGutter-spaceBetween highlights padding-lg">
-      <div class="col-12">
-        <p class="editable">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      {% for highlight in page.highlights %}
-      <div class="col-2_md-4_sm-12 highlight-container">
+  </section>
+  <div class="grid-noGutter-spaceBetween highlights padding-lg">
+    <div class="col-12">
+      <p class="editable">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="editable">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    {% for highlight in page.highlights %}
+    <div class="col-2_md-6_xs-12">
+      <div class="highlight-container">
         <div class="highlight-icon">
           {% assign id = highlight.icon_id %}
           {% include custom-icons.html icon=id %}
@@ -60,128 +102,123 @@ mentors:
           </h3>
         </div>
       </div>
-      {% endfor %}
-      <div class="col-12">
-        <p class="editable">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
     </div>
-  </section>
-  <section id="milestones" class="milestones center padding-md">
-    <h2>
+    {% endfor %}
+  </div>
+  <section id="milestones" class="milestones center padding-lg" data-aos="fade-up">
+    <h2 class="editable">
       Now accepting applications!
     </h2>
     <div class="milestone-container grid-noGutter-spaceBetween">
-      <div class="col-2 milestone-item">
+      <div class="col-2_sm-7 milestone-item">
         <div class="milestone-outer">
-          <div class="milestone-inner">
+          <div class="milestone-inner {% if page.complete_milestone_1 %} complete {% endif %}">
             <span>
               Jun/Jul
             </span>
           </div>
         </div>
-        <h3>
+        <h3 class="editable">
           Applications
         </h3>
       </div>
-      <div class="col-2 milestone-item">
+      <div class="col-2_sm-7 milestone-item">
         <div class="milestone-outer">
-          <div class="milestone-inner">
+          <div class="milestone-inner {% if page.complete_milestone_2 %} complete {% endif %}">
             <span>
-              Jun/Jul
+              Aug
             </span>
           </div>
         </div>
-        <h3>
+        <h3 class="editable">
           Visa Processing
         </h3>
       </div>
-      <div class="col-2 milestone-item">
+      <div class="col-2_sm-7 milestone-item">
         <div class="milestone-outer">
-          <div class="milestone-inner">
+          <div class="milestone-inner {% if page.complete_milestone_3 %} complete {% endif %}">
             <span>
-              Jun/Jul
+              Sep/Nov
             </span>
           </div>
         </div>
-        <h3>
+        <h3 class="editable">
           Program Launch
         </h3>
       </div>
-      <div class="col-2 milestone-item">
+      <div class="col-2_sm-7 milestone-item">
         <div class="milestone-outer">
-          <div class="milestone-inner">
+          <div class="milestone-inner {% if page.complete_milestone_4 %} complete {% endif %}">
             <span>
-              Jun/Jul
+              Nov/Dec
             </span>
           </div>
         </div>
-        <h3>
+        <h3 class="editable">
           Networking Event
         </h3>
       </div>
-      <div class="col-2 milestone-item">
+      <div class="col-2_sm-7 milestone-item">
         <div class="milestone-outer">
-          <div class="milestone-inner">
+          <div class="milestone-inner {% if page.complete_milestone_5 %} complete {% endif %}">
             <span>
-              Jun/Jul
+              Jan/Feb
             </span>
           </div>
         </div>
-        <h3>
+        <h3 class="editable">
           Demo Day
         </h3>
       </div>
     </div>
   </section>
-  <section id="program">
+  <section id="program" class="program padding-lg">
     <div class="grid-noGutter">
-      <div class="col-6_sm-12-middle background-svg-1">
+      <div class="col-6_md-12-middle">
         <div class="padding-md info-box">
-          <h2>
+          <h2 class="editable">
             Program Requirements
           </h2>
-          <p>
+          <p class="editable">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
       </div>
-      <div class="col-6_sm-12">
-        <div class="left padding-lg">
-          <ol>
-            Founders applying to this program must be:
-            <li>
+      <div class="col-6_md-12">
+        <div class="left padding-md program-requirements">
+          <ol class="editable">
+            <strong>Founders applying to this program must be:</strong>
+            <li class="editable">
               Prepared to actively work on their startup idea for the duration of the 6-month program
             </li>
-            <li>
+            <li class="editable">
               Able to demonstrate relevant training and expertise in the subject area of the business
             </li>
-            <li>
+            <li class="editable">
               Hold a passport valid for more than 6 months from the program start date in September 2020
             </li>
-            <li>
+            <li class="editable">
               Acquire health insurance for the duration of the program
             </li>
-            <li>
+            <li class="editable">
               Acquire health insurance for the duration of the program
             </li>
           </ol>
-          <ul>
-            Startup idea must be within the following industries and niches as specificed by the SMART visa program:
-            <li>
+          <ul class="editable">
+            <strong>Startup idea must be within the following industries and niches as specificed by the SMART visa program:</strong>
+            <li class="editable">
               Prepared to actively work on their startup idea for the duration of the 6-month program
             </li>
-            <li>
+            <li class="editable">
               Able to demonstrate relevant training and expertise in the subject area of the business
             </li>
-            <li>
+            <li class="editable">
               Hold a passport valid for more than 6 months from the program start date in September 2020
             </li>
-            <li>
+            <li class="editable">
               Acquire health insurance for the duration of the program
             </li>
-            <li>
+            <li class="editable">
               Acquire health insurance for the duration of the program
             </li>
           </ul>
@@ -191,42 +228,42 @@ mentors:
     </div>
   </section>
   <section class="cta-1 padding-lg">
-    <div class="center cta-1-container padding-md">
-      <h2>
+    <div class="center cta-container padding-md" data-aos="zoom-in">
+      <h2 class="editable">
         Sign up
       </h2>
-      <p>
+      <p class="editable">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <form class="sign-up-form" action="index.html" method="post">
         <input type="name" name="name" value="" placeholder="Your Name">
         <input type="email" name="email" value="" placeholder="Your Email">
-        <button type="submit" name="button" class="btn">Register now</button>
+        <button type="submit" name="button" class="btn editable">Register now</button>
       </form>
     </div>
   </section>
   <section id="details" class="padding-lg center">
-    <h2>
+    <h2 class="editable">
       Program Details
     </h2>
-    <p>
+    <p class="editable">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
     <div class="details-content">
-      <h3>
+      <h3 class="editable">
         Content & Format
       </h3>
-      <!-- Transform this into a HTML Markdown field populated from frontmatter -->
-      <p>
+
+      <p class="editable">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
     <div class="details-content">
-      <h3>
+      <h3 class="editable">
         Content & Format
       </h3>
-      <!-- Transform this into a HTML Markdown field populated from frontmatter -->
-      <p>
+
+      <p class="editable">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
@@ -237,19 +274,23 @@ mentors:
       <div class="grid-noGutter-spaceBetween">
         {% for mentor in page.mentors %}
         <div class="col-3_md-6_sm-12">
-          <div class="mentor-avatar">
-            <img src="{{mentor.avatar}}" alt="">
-          </div>
-          <div class="mentor-bio">
-            <h3>
-              {{mentor.name}}
-            </h3>
-            <span>
-              {{mentor.position}}
-            </span>
-            <span>
-              {{mentor.company}}
-            </span>
+          <div class="mentor-card">
+            <div class="mentor-avatar">
+              {% assign path = mentor.avatar_image %}
+              {% assign alt = mentor.name %}
+              {% include image-lazy.html %}
+            </div>
+            <div class="mentor-bio">
+              <h3>
+                {{mentor.name}}
+              </h3>
+              <span>
+                {{mentor.position}}
+              </span>
+              <span>
+                {{mentor.company}}
+              </span>
+            </div>
           </div>
         </div>
         {% endfor %}
@@ -259,59 +300,25 @@ mentors:
       <h3 class="editable">
         Content & Format
       </h3>
-      <!-- Transform this into a HTML Markdown field populated from frontmatter -->
-      <p>
+      <p class="editable">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
   </section>
   <section id="application" class="application padding-lg">
-    <h2>
+    <h2 class="editable">
       Apply now
     </h2>
-    <h3>
+    <h3 class="editable">
       Preferential Deadline: 17 July 2020
     </h3>
-    <h3>
+    <h3 class="editable">
       Final Deadline: 31 July 2020
     </h3>
-    <p>
+    <p class="editable">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-    <a href="btn">Begin application</a>
+    <a href="#" class="btn" data-aos="zoom-in">Begin application</a>
   </section>
-  <section class="sponsors padding-lg">
-    <h2>Created in Partnership</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <div class="grid-noGutter-spaceBetween">
-      <div class="col-2_md-4_sm-6">
-        <div class="sponsor-logo">
-          <img src="siteicon.png" alt="">
-        </div>
-      </div>
-      <div class="col-2_md-4_sm-6">
-        <div class="sponsor-logo">
-          <img src="siteicon.png" alt="">
-        </div>
-      </div>
-      <div class="col-2_md-4_sm-6">
-        <div class="sponsor-logo">
-          <img src="siteicon.png" alt="">
-        </div>
-      </div>
-      <div class="col-2_md-4_sm-6">
-        <div class="sponsor-logo">
-          <img src="siteicon.png" alt="">
-        </div>
-      </div>
-      <div class="col-2_md-4_sm-6">
-        <div class="sponsor-logo">
-          <img src="siteicon.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
+  {% include blocks/sponsors.html %}
 </main>
