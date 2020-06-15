@@ -16,5 +16,16 @@ $(document).ready(function(){
     $('.burger').toggleClass('open');
 
   });
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 90) {
+      if (!$('.nav-bar').hasClass('navbar-scroll')) {
+        $('.nav-bar').addClass('navbar-scroll');
+      }
+    } else {
+      if ($('.nav-bar').hasClass('navbar-scroll')) {
+        $('.nav-bar').removeClass('navbar-scroll');
+      }
+    }
+  });
 
 });

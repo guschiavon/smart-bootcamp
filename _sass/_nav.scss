@@ -26,6 +26,16 @@
     margin       : 0;
   }
 }
+.navbar-scroll {
+	background: #ffffff;
+	-webkit-box-shadow : 0px 1px 10px rgba(0, 0, 0, 0.4);
+	   -moz-box-shadow : 0px 1px 10px rgba(0, 0, 0, 0.4);
+	        box-shadow : 0px 1px 10px rgba(0, 0, 0, 0.4);
+          @include transition;
+}
+.navbar-scroll.nav-bar .nav-link {
+  color   : $accent-color;
+}
 
 // Mobile Navigation
 .mobile-nav {
