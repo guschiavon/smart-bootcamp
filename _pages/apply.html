@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Apply - SMART Startup Bootcamp
+title: SMART Startup Bootcamp Application
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 preview_image:
 faqs:
@@ -22,48 +22,28 @@ faqs:
     </div>
     <div class="above-the-fold-content">
       <h1 class="editable">
-        Application guidelines
+        {{page.title}}
       </h1>
       <p class="editable">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
   </section>
-  <div class="grid-noGutter-spaceBetween highlights padding-lg">
-    <div class="col-12">
-      <p class="editable">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p class="editable">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    {% for highlight in page.highlights %}
-    <div class="col-2_md-4_sm-12">
-      <div class="highlight-container">
-        <div class="highlight-icon">
-          {% assign id = highlight.icon_id %}
-          {% include custom-icons.html icon=id %}
-        </div>
-        <div class="highlight-content">
-          <h3>
-            {{highlight.highlight_title}}
-          </h3>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+  
   <section id="milestones" class="milestones center padding-lg" data-aos="fade-up">
+    <p class="editable">
+      Before you apply, please be sure to review all of the information below. This will help you to understand if you are qualified for this program, and if so, to prepare an application with the greatest chance of being accepted.
+
+    </p>
     <div class="milestone-container grid-noGutter-spaceBetween">
       <div class="col-2_sm-7 milestone-item">
         <a href="#application">
           <div class="milestone-outer">
-            <div class="milestone-inner">
+            <!-- <div class="milestone-inner"> -->
               <span>
                 1
               </span>
-            </div>
+            <!-- </div> -->
           </div>
           <h3 class="editable">
             Prepare program application
@@ -73,11 +53,11 @@ faqs:
       <div class="col-2_sm-7 milestone-item">
         <a href="#">
           <div class="milestone-outer">
-            <div class="milestone-inner">
+            <!-- <div class="milestone-inner"> -->
               <span>
                 2
               </span>
-            </div>
+            <!-- </div> -->
           </div>
           <h3 class="editable">
             Submit Program Application
@@ -87,11 +67,11 @@ faqs:
       <div class="col-2_sm-7 milestone-item">
         <a href="#">
           <div class="milestone-outer">
-            <div class="milestone-inner">
+            <!-- <div class="milestone-inner"> -->
               <span>
                 3
               </span>
-            </div>
+            <!-- </div> -->
           </div>
           <h3 class="editable">
             Pay deposit (if accepted)
@@ -101,11 +81,11 @@ faqs:
       <div class="col-2_sm-7 milestone-item">
         <a href="#">
           <div class="milestone-outer">
-            <div class="milestone-inner">
+            <!-- <div class="milestone-inner"> -->
               <span>
                 4
               </span>
-            </div>
+            <!-- </div> -->
           </div>
           <h3 class="editable">
             Apply for SMART Visa (fast-track)
@@ -115,35 +95,35 @@ faqs:
       <div class="col-2_sm-7 milestone-item">
         <a href="#">
           <div class="milestone-outer">
-            <div class="milestone-inner">
+            <!-- <div class="milestone-inner"> -->
               <span>
                 5
               </span>
-            </div>
-          </div>
-          <h3 class="editable">
-            Get SMART Visa
-          </h3>
-        </a>
-      </div>
-      <div class="col-2_sm-7 milestone-item">
-        <a href="#">
-          <div class="milestone-outer">
-            <div class="milestone-inner">
-              <span>
-                6
-              </span>
-            </div>
+            <!-- </div> -->
           </div>
           <h3 class="editable">
             Send final payment
           </h3>
         </a>
       </div>
+      <div class="col-2_sm-7 milestone-item">
+        <a href="#">
+          <div class="milestone-outer">
+            <!-- <div class="milestone-inner"> -->
+              <span>
+                6
+              </span>
+            <!-- </div> -->
+          </div>
+          <h3 class="editable">
+            Get SMART Visa (from OSS in BKK)
+          </h3>
+        </a>
+      </div>
     </div>
     <div class="col-12">
       <p class="editable">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        We estimate this process to take 6 weeks from the time your application is submitted, providing all materials are correct and no follow up is required.      
       </p>
     </div>
   </section>
@@ -154,7 +134,7 @@ faqs:
             Program details
           </h2>
           <p class="editable">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            This program is designed for idea and early-stage startups. The SMART Visa is given to startups in special industries or with demonstrated growth potential. Please carefully review the criteria below to determine if you and your startup idea are a match for this program.
           </p>
           <ol class="editable">
             <strong>Founders applying to this program must be:</strong>
@@ -193,22 +173,30 @@ faqs:
             </li>
           </ul>
           <div id="payment">
+            
             <h3 class="editable">
-              Price and payment plans
+              Program Fees
             </h3>
-            <p class="editable">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+            <ul class="editable">Price & Payment Terms
+              <li class="editable">
+                The total cost of this 6-month program is ฿38,000. 
+              </li>
+              <li class="editable">
+                Successful applicants must pay a deposit of ฿10,000 to secure their place and apply for the SMART Visa. Final 
+              </li>
+              <li class="editable">
+                Payments can be made by direct bank transfer or by credit-card (additional processing fees will apply). 
+              </li>
+            </ul>
         </div>
       </div>
   </section>
   <section id="requirements" class="padding-lg">
-    <h2 class="editable">
+    <h2 class="editable center">
       Application requirements
     </h2>
-    <p class="editable">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p class="editable center">
+      The following materials will be required to submit your application. We recommend preparing materials in advance so your application can be submitted in one sitting.
     </p>
     <div class="details-content center">
       <h3 class="editable">
@@ -239,7 +227,19 @@ faqs:
         4. Proof of Insurance
       </h3>
       <p class="editable">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Valid health insurance is required in order to receive the SMART Visa. While you do not need to provide proof of insurance until after you have been accepted, it is recommended that you check if your current insurance provides sufficient coverage and research more suitable options if not.
+      </p>
+      <ol class="editable">
+        To be suitable for this visa, your health insurance must…
+        <li class="editable">
+          Be valid for the duration of this program, September 2020 to February 2021. 
+        </li>
+        <li class="editable">
+          Provide coverage for up to XXX,XXX.
+        </li>
+      </ol>        
+      <p class="editable">
+        Please note that travel insurance is inadequate and will not be accepted as valid for this visa.
       </p>
     </div>
   </section>
@@ -262,8 +262,7 @@ faqs:
         Final Deadline: 31 July 2020
       </h3>
       <p class="editable">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+        If you want to apply, please submit your application online by 20:00  ICT on 31 July 2020. Startups that submit early have an advantage because we have more time to review applications. Decisions will be made on a rolling basis and you should hear from us within two weeks, after which your deposit is due and your visa application can be submitted.      </p>
       <a href="#" class="btn">Begin Application</a>
     </div>
   </section>
@@ -283,13 +282,12 @@ faqs:
     {% endfor %}
   </section>
   <section class="cta-1 padding-lg center">
-    <h3 class="editable">
+    <!-- <h3 class="editable">
       Ready to apply?
     </h3>
     <p>
       Please click the "Begin Application" button below which will direct you to our application portal.
-      <strong>Not sure you're ready to apply yet?</strong> Scroll down and read our Frequently Asked Questions.
-    </p>
+    </p> -->
     <div class="cta-container padding-md" data-aos="zoom-in">
       <h2 class="editable">
         Not quite ready to submit your application?
@@ -297,10 +295,10 @@ faqs:
       <p class="editable">
         Register your interest to receive an application checklist, reminders for deadlines, and important Thailand visa and travel updates related to the program.
       </p>
-      <form class="" action="index.html" method="post">
+      <form class="center" action="index.html" method="post">
         <input type="name" name="" value="" placeholder="Your Name">
         <input type="email" name="" value="" placeholder="Your email">
-        <button type="submit" name="button" class="btn editable">Contact us</button>
+        <button style="display: block;margin:auto;"type="submit" name="button" class="btn editable">Contact us</button>
       </form>
 
     </div>

@@ -4,7 +4,12 @@
  .padding-lg {
    padding: 2% 4%;
  }
- p {
+ p,
+ ol,
+ ul,
+ li,
+ a,
+ span {
    font-size: 1rem;
  }
  .footer {
@@ -17,6 +22,11 @@
     margin: 0;
     margin-bottom: 2rem;
     padding: 1rem 1.5rem;
+  }
+  #message-form {
+    input,textarea,button {
+      width: 95%;
+    }
   }
 }
 
@@ -48,6 +58,7 @@
   ol,
   ul,
   li,
+  a,
   span {
     font-size: 1.1rem;
   }
@@ -65,14 +76,27 @@
 // Other combinations
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .milestone-container::before {
-    position  : absolute;
-    top       : 10%;
-    left      : 3.2rem;
-    content   : '';
-    height    : 80%;
-    width     : 8px;
-    z-index   : -1;
+  .milestones-container {
+    div {
+      border-right: none;
+      margin-bottom: 1rem;
+      span {
+        position: relative;
+        transform: unset;
+        bottom: unset;
+        left: unset;
+      }
+      &:nth-of-type(3) {
+      span {
+        left: -2rem;
+        &:last-of-type {
+          right: -2rem;
+          left: unset;
+          text-align: right;        
+        }
+      }
+    }
+    }
   }
   .milestone-item {
     margin: 1rem;
@@ -106,7 +130,7 @@
   }
   input,
   button {
-    width: 250px;
+    width: 80%;
   }
   .details-content {
     padding: 2rem 1rem;
@@ -114,6 +138,9 @@
   .mentors .mentor-avatar {
     height: 150px;
     width: 150px;
+  }
+  .mentor-bio {
+    text-align: center;
   }
   .partner-logo {
     height: 120px;

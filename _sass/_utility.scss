@@ -43,8 +43,11 @@
 }
 
 .bg-accent {
-  color            : $primary-color;
   background-color : $accent-color;
+  h2, h3, p, span {
+    color            : #fff;
+
+  }
 }
 
 // Display

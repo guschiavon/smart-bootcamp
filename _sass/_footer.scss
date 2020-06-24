@@ -5,9 +5,20 @@
       margin-bottom: 1rem;
     }
   }
-  background-color: $accent-color;
+  background-color: $secondary-color;
   a,
   span {
     color: $primary-color;
+  }
+  a.btn {
+    border-radius: 40px;
+    border: 2px solid;
+    padding: 1rem 2rem;
+    background-image: none;
+    &:hover {
+      background-color: $primary-color;
+      color: $secondary-color;
+      transition: 0.2s all;
+    }
   }
 }

@@ -55,6 +55,10 @@ a {
 ol,
 ul {
   list-style-position: inside;
+  font-weight: 600;
+  li {
+    font-weight: 400;
+  }
 }
 
 h1,
@@ -83,23 +87,27 @@ ul {
 }
 
 input,
-button {
+button,
+textarea {
   border: none;
   padding: 1rem;
   width: 350px;
+  font-size: 1.2rem;
+  &::placeholder {
+    font-family: $body-font-family;
+  }
 }
 
 button {
   color: $primary-color;
-  font-size: 1.2rem;
-  margin: 1rem auto;
+  // margin: 1rem auto;
 }
 
 input {
-  border-radius: 30px;
+  // border-radius: 30px;
   margin: auto;
   margin-bottom: 1rem;
-  display: block;
+  // display: block;
 }
 
 // Paddings

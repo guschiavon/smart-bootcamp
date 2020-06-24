@@ -14,5 +14,18 @@
   span {
     color: $primary-color;
   }
+}
 
+#message-form {
+  input,
+  button,
+  textarea {
+    border: none;
+    display: block;
+    padding: 1rem;
+    width: 60%;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
 }

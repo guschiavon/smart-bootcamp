@@ -1,4 +1,50 @@
+.milestones-container {
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #fdca10 15%, #ff611f);
+  div {
+    position: relative;
+    border-right: 2px solid #fff;
+    h3 {
+      margin:0;
+      font-size: 1.4rem;
+      padding: 2rem 0;
+      color: #fff;
+    }
+    &:last-of-type {
+      border-right: unset;
+    }
+    span {
+      position: absolute;
+      width: 100%;
+      bottom: -3rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:nth-of-type(3) {
+      span {
+        left: 0%;
+        transform: unset;
+        text-align: left;
+        &:last-of-type {
+          right: -5rem;
+          left: unset;
+          text-align: right;
+          // transform: translateX(20%);
+        }
+      }
+    }
+    &:last-of-type {
+      span {
+        left: unset;
+        right: 0;
+        text-align: right;
+        transform: unset;
+      }
+    }
+  }
+}
 
+// Old version
 .milestone-container {
   position: relative;
 }
@@ -7,42 +53,19 @@
   text-align: center;
   position: relative;
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
-.milestone-container::before,
-.milestone-outer {
+.milestone-container::before, {
   background-color: darken($primary-color, 5);
-}
-
-.milestone-container::before {
-  position  : absolute;
-  top       : 25%;
-  left      : 10%;
-  content   : '';
-  height    : 12px;
-  width     : 80%;
-  z-index   : -1;
 }
 
 .application {
   .milestone-container::before {
     background-color: unset;
   }
-  .milestone-inner {
-    span {
-      font-size: 2rem;
-      font-weight: 600;
-    }
-    &:hover {
-      transition: background 0.2s linear;
-      background-image: linear-gradient(45deg, orange 15%, red);
-      .milestone-inner {
-        transform: scale(1.02);
-      }
-    }
-  }
+
   .milestone-item {
     h3 {
       margin: 1rem auto;
@@ -50,40 +73,21 @@
   }
 }
 
-.milestone-inner,
+
 .milestone-outer {
   -webkit-border-radius: 100%;
      -moz-border-radius: 100%;
           border-radius: 100%;
   @include flex-center;
   margin: auto;
+  span {
+    font-size: 2.5rem;
+    color: #ff611f;
+  }
 }
 
 .milestone-outer {
   height: 100px;
   width: 100px;
-}
-
-.milestone-inner {
-  background-color: #c1c1c1;
-  height: 75px;
-  width: 75px;
-  position: relative;
-  transition: background 0.2s linear;
-  span {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: $body-font-family;
-    text-transform: uppercase;
-    color: #555;
-    font-size: 0.9rem;
-  }
-}
-.milestone-inner.complete {
-  // background-image: unset;
-  background-image: linear-gradient(45deg, red 15%, orange);
-  span {
-    color: #f2f2f2;
-  }
+  border: 5px solid #ff611f;
 }
