@@ -317,11 +317,9 @@ Due to precautions for COVID19, this program will now be run primarily remote. W
         <div class="col-3_md-6_sm-12">
           <div class="mentor-card">
             <div class="mentor-avatar">
-              {% assign path = mentor.avatar_image %}
-              {% assign alt = mentor.name %}
-              {% include image-lazy.html %}
+              <img src="{{mentor.avatar_image}}" alt="{{mentor.name}}">
             </div>
-            <div class="mentor-bio">
+            <div class="mentor-bio center">
               <h3>
                 {{mentor.name}}
               </h3>
